@@ -1,0 +1,448 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.App-logo {
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #f8f9fa;
+  color: black;
+  box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerElements {
+  margin: 10px;
+}
+
+.buttonInicio {
+  width: 64px;
+  height: 40px;
+
+  background: #e9ecef;
+
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.divLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px;
+}
+.formDiv {
+  box-sizing: border-box;
+
+  width: 363px;
+  height: 351px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+}
+.valorTotalDiv {
+  box-sizing: border-box;
+
+  width: 363px;
+  height: 96px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.valorTotalTitle {
+  width: fit-content;
+  height: 30px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #212529;
+}
+.valorTotalSpan {
+  width: fit-content;
+  height: 22px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+
+  color: #343a40;
+}
+.totalNum {
+  width: 53px;
+  height: 30px;
+  max-width: 60px;
+  overflow: hidden;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #fd377e;
+}
+
+.divRigth {
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 90%;
+  align-items: center;
+}
+.resumoDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleResumFinan {
+  width: fit-content;
+  height: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212529;
+}
+.btnsDiv {
+  left: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.btnTodos {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+
+  width: 69px;
+  height: 40px;
+
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+.btnEntradas,
+.btnDespesas {
+  cursor: pointer;
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+
+  width: 87px;
+  height: 40px;
+
+  /* grey-2 */
+
+  background: #e9ecef;
+  /* grey-2 */
+
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+@media (min-width: 1100px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .App-logo {
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #f8f9fa;
+    color: black;
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerElements {
+    margin: 10px;
+  }
+
+  .buttonInicio {
+    width: 64px;
+    height: 40px;
+
+    background: #e9ecef;
+
+    border: 1.4px solid #e9ecef;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .divLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px;
+  }
+  .formDiv {
+    box-sizing: border-box;
+
+    width: 363px;
+    height: 351px;
+
+    background: #ffffff;
+
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+  }
+  .valorTotalDiv {
+    box-sizing: border-box;
+
+    width: 363px;
+    height: 96px;
+
+    background: #ffffff;
+
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .valorTotalTitle {
+    width: fit-content;
+    height: 30px;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #212529;
+  }
+  .valorTotalSpan {
+    width: fit-content;
+    height: 22px;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+
+    color: #343a40;
+  }
+  .totalNum {
+    width: 53px;
+    height: 30px;
+    max-width: 60px;
+    overflow: hidden;
+
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #fd377e;
+  }
+
+  .divRigth {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 600px;
+  }
+  .resumoDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .titleResumFinan {
+    width: fit-content;
+    height: 30px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212529;
+  }
+  .btnsDiv {
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 70%;
+  }
+  .btnTodos {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+    width: 69px;
+    height: 40px;
+
+    background: #fd377e;
+    border: 1.4px solid #fd377e;
+    border-radius: 8px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .btnEntradas,
+  .btnDespesas {
+    cursor: pointer;
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+    width: 87px;
+    height: 40px;
+
+    /* grey-2 */
+
+    background: #e9ecef;
+    /* grey-2 */
+
+    border: 1.4px solid #e9ecef;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
